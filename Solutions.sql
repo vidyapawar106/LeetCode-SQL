@@ -9,7 +9,7 @@ select max(Salary) as SecondHighestSalary From Employee
 where Salary < (select max(Salary) From Employee);
 
 
-#Question Three: Nth Highest Salary
+# Solution Three: Nth Highest Salary
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
 SET N = N - 1;
@@ -23,7 +23,7 @@ SET N = N - 1;
 END
 
 
-#Question Four: Rank Scores
+# Solution Four: Rank Scores
 SELECT
      Score,
     Dense_RANK() OVER (
@@ -31,3 +31,9 @@ SELECT
     ) 'Rank'
 FROM
     Scores;
+
+
+# Solution Five: Customers Who Never Order
+select Name as 'Customers' from Customers
+left join Orders on Orders.CustomerId = Customers.Id
+where Orders.CustomerId IS NULL;
