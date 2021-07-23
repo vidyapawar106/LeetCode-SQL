@@ -1,5 +1,5 @@
 # LeetCode-SQL
-I have been practising few SQL  coding questions to upscale my abilities.
+We all know how crucial is Data Engineering in Data Science. Therefore, I have been practising few SQL coding questions on LeetCode to enhance my abilities.
 
 # Question One: Combine Two Tables
 Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:
