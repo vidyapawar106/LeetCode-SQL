@@ -20,3 +20,8 @@ https://leetcode.com/problems/nth-highest-salary/
 # Question Four: Rank Scores
 Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no "holes" between ranks.
 https://leetcode.com/problems/largest-number/
+
+
+# Question Five: Customers Who Never Order
+Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything.
+https://leetcode.com/problems/customers-who-never-order/
