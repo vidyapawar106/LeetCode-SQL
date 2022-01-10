@@ -137,6 +137,17 @@ Group by class
 Having count(class)>=5;
 
 
-
+# Solution Sixteen: Median Salary
+Select id, company, salary
+from
+(
+  Select id, company, salary, 
+         row_number() Over(Partition by company order by salary) as      
+         rno,
+         count(*) Over(Partition by company) as cnt
+  from Employee
+) x
+where rno in (Ceil(cnt/2), cnt/2 + 1)
+;
 
 
