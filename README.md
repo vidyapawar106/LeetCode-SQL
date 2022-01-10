@@ -55,4 +55,41 @@ Write an SQL query to find the employees who are high earners in each of the dep
 https://leetcode.com/problems/department-top-three-salaries/
 
 
+# Question Eleven: Big Country 
+A country is big if:
+it has an area of at least three million (i.e., 3000000 km2), or
+it has a population of at least twenty-five million (i.e., 25000000).
+Write an SQL query to report the name, population, and area of the big countries.
+https://leetcode.com/problems/big-countries/
+
+
+# Question Twelve: Swap Salary
+Write an SQL query to swap all 'f' and 'm' values (i.e., change all 'f' values to 'm' and vice versa) with a single update statement and no intermediate temporary tables.
+Note that you must write a single update statement, do not write any select statement for this problem.
+https://leetcode.com/problems/swap-salary/
+
+
+# Question Thirteen: Not Boring Movies
+Write an SQL query to report the movies with an odd-numbered ID and a description that is not "boring".
+Return the result table ordered by rating in descending order.
+https://leetcode.com/problems/not-boring-movies/
+
+
+# Question Fourteen: Rising Temperature
+Write an SQL query to find all dates' Id with higher temperatures compared to its previous dates (yesterday).
+Return the result table in any order.
+https://leetcode.com/problems/rising-temperature/
+
+
+# Question Fifteen: Class more than 5 students
+Write an SQL query to report all the classes that have at least five students.
+Return the result table in any order.
+https://leetcode.com/problems/classes-more-than-5-students/
+
+
+# Question Sixteen: Delete Duplicate Emails
+Write an SQL query to delete all the duplicate emails, keeping only one unique email with the smallest id.
+Return the result table in any order.
+https://leetcode.com/problems/delete-duplicate-emails/
+
 
