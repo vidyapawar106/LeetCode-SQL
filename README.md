@@ -88,4 +88,11 @@ Return the result table in any order.
 https://leetcode.com/problems/classes-more-than-5-students/
 
 
+# Order of SQL operations taking place
+![image](https://user-images.githubusercontent.com/52663320/148821376-f4951318-d212-42db-ad93-2c30a2e88cd2.png)
+
+
+# Order of how SQL statements are written
+![image](https://user-images.githubusercontent.com/52663320/148821552-457db095-5550-401f-8736-f504b02cd0ea.png)
+
 
