@@ -65,10 +65,12 @@ WHERE
 ;
 
 
-# Solution Eight: Duplicate Emails
-Select Email from Person
-group by Email
-having Count(Email) > 1
+# Solution Eight: Deleting Duplicate Emails
+Hint: Try selecting the records you want to remove, then replace it with Delete keyword.
+DELETE p1 FROM Person p1,    
+    Person p2
+WHERE
+    p1.Email = p2.Email AND p1.Id > p2.Id
 
 
 # Solution Nine: Department Highest Salary
@@ -89,3 +91,52 @@ JOIN Department d ON e1.DepartmentId = d.Id
 WHERE 3 > (SELECT COUNT(DISTINCT e2.Salary)
         FROM Employee e2
         WHERE e2.Salary > e1.Salary AND e1.DepartmentId = e2.DepartmentId);
+        
+        
+# Solution Eleven: Big Countries
+Select name, population, area from World
+where area >= 3000000 or population >=25000000;
+        
+
+# Solution Twelve: Swap Salary
+Update Salary
+Set sex = CASE sex 
+    WHEN 'm' THEN 'f'
+    ELSE 'm'
+    END;
+
+
+# Solution Thirteen: Non Boring & Odd numbered Movies
+Select * from Cinema 
+Where description !='boring' and (id % 2) > 0
+Order by rating DESC;
+
+
+# Solution Fourteen: Rising Temperature
+Select 
+    w2.id
+From
+    Weather w1
+    INNER JOIN
+    Weather w2 ON w2.id = w1.id + 1 
+Where
+    w1.temperature < w2.temperature;
+
+ALSO:  SELECT
+    weather.id AS 'Id'
+       FROM
+          weather
+              JOIN
+          weather w ON DATEDIFF(weather.recordDate, w.recordDate) = 1
+              AND weather.Temperature > w.Temperature;
+
+
+# Solution Fifteen: Classes More Than 5 Students
+Select class From Courses
+Group by class
+Having count(class)>=5;
+
+
+
+
+
