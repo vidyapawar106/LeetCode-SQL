@@ -39,9 +39,10 @@ Given the Employee table, write a SQL query that finds out employees who earn mo
 https://leetcode.com/problems/employees-earning-more-than-their-managers/
 
 
-# Question Eight: Duplicate Emails
-Write a SQL query to find all duplicate emails in a table named Person.
-https://leetcode.com/problems/duplicate-emails/
+# Question Eight: Delete Duplicate Emails
+Write an SQL query to delete all the duplicate emails, keeping only one unique email with the smallest id.
+Return the result table in any order.
+https://leetcode.com/problems/delete-duplicate-emails/
 
 
 # Question Nine: Department Highest Salary
@@ -86,10 +87,5 @@ Write an SQL query to report all the classes that have at least five students.
 Return the result table in any order.
 https://leetcode.com/problems/classes-more-than-5-students/
 
-
-# Question Sixteen: Delete Duplicate Emails
-Write an SQL query to delete all the duplicate emails, keeping only one unique email with the smallest id.
-Return the result table in any order.
-https://leetcode.com/problems/delete-duplicate-emails/
 
 
