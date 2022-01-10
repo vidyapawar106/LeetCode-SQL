@@ -91,6 +91,7 @@ https://leetcode.com/problems/classes-more-than-5-students/
 # Question Sixteen: Median Salary
 The Employee table holds all employees. The employee table has three columns: Employee Id, Company Name, and Salary.
 Write a SQL query to find the median salary of each company. 
+https://leetcode.com/problems/median-employee-salary/
 
 
 # Order of SQL operations taking place
