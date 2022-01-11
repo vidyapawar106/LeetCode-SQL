@@ -14,12 +14,9 @@ CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
 SET N = N - 1;
   RETURN (
-      # Write your MySQL query statement below.
-      
       select Salary from Employee
       Order by Salary Desc
-      LIMIT N, 1
-  );
+      LIMIT N, 1);
 END
 
 
@@ -49,8 +46,7 @@ WHERE
     l1.Id = l2.Id - 1
     AND l2.Id = l3.Id - 1
     AND l1.Num = l2.Num
-    AND l2.Num = l3.Num
-;
+    AND l2.Num = l3.Num;
 
 
 # Solution Seven: Employees Earning More Than Their Managers
@@ -61,8 +57,7 @@ FROM
     Employee AS b
 WHERE
     a.ManagerId = b.Id
-        AND a.Salary > b.Salary
-;
+        AND a.Salary > b.Salary;
 
 
 # Solution Eight: Deleting Duplicate Emails
@@ -70,7 +65,7 @@ Hint: Try selecting the records you want to remove, then replace it with Delete 
 DELETE p1 FROM Person p1,    
     Person p2
 WHERE
-    p1.Email = p2.Email AND p1.Id > p2.Id
+    p1.Email = p2.Email AND p1.Id > p2.Id;
 
 
 # Solution Nine: Department Highest Salary
@@ -80,8 +75,7 @@ join Department on Employee.DepartmentId = Department.Id
 where (Employee.DepartmentId , Salary) 
 IN (
     Select DepartmentId, max(Salary) from Employee
-    group by DepartmentId
-);
+    group by DepartmentId);
 
 
 # Solution Ten: Department Top Three Salaries
@@ -147,8 +141,7 @@ from
          count(*) Over(Partition by company) as cnt
   from Employee
 ) x
-where rno in (Ceil(cnt/2), cnt/2 + 1)
-;
+where rno in (Ceil(cnt/2), cnt/2 + 1);
 
 
 # Solution Seventeen: Trips & users
@@ -159,7 +152,7 @@ from Trips t
 inner join Users u 
 on t.Client_Id = u.Users_Id and u.Banned = 'No'
 where t.Request_at between '2013-10-01' and '2013-10-03'
-group by t.Request_at
+group by t.Request_at;
 
 
 
