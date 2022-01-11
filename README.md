@@ -102,3 +102,8 @@ https://leetcode.com/problems/median-employee-salary/
 ![image](https://user-images.githubusercontent.com/52663320/148821552-457db095-5550-401f-8736-f504b02cd0ea.png)
 
 
+# Different SQL Commands
+![image](https://user-images.githubusercontent.com/52663320/148949064-70355b2f-2d9b-4cab-9e80-ad4bad58c16b.png)
+
+
+
