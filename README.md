@@ -107,6 +107,17 @@ Return the result table ordered by id in ascending order.
 https://leetcode.com/problems/exchange-seats/
 
 
+# Question Nineteen: Project Employees III
+Write an SQL query that reports the most experienced employees in each project. In case of a tie, report all employees with the maximum number of experience years.
+https://leetcode.com/problems/project-employees-iii/
+
+
+# Question Twenty: Human Traffic of Stadium
+Write an SQL query to display the records with three or more rows with consecutive id's, and the number of people is greater than or equal to 100 for each.
+Return the result table ordered by visit_date in ascending order.
+https://leetcode.com/problems/human-traffic-of-stadium/
+
+
 # Order of SQL operations taking place
 ![image](https://user-images.githubusercontent.com/52663320/148821376-f4951318-d212-42db-ad93-2c30a2e88cd2.png)
 
