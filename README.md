@@ -101,6 +101,12 @@ Return the result table in any order.
 https://leetcode.com/problems/trips-and-users/
 
 
+# Question Eighteen: Exchange Seats
+Write an SQL query to swap the seat id of every two consecutive students. If the number of students is odd, the id of the last student is not swapped.
+Return the result table ordered by id in ascending order.
+https://leetcode.com/problems/exchange-seats/
+
+
 # Order of SQL operations taking place
 ![image](https://user-images.githubusercontent.com/52663320/148821376-f4951318-d212-42db-ad93-2c30a2e88cd2.png)
 
